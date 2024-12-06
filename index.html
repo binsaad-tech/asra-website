@@ -68,6 +68,31 @@
 			text-decoration: none
 		}
 	</style>
+	<style>
+        /* Hide the desktop video by default */
+        .desktop-video {
+            display: none;
+        }
+
+		.desktop-video-2 {
+            display: none;
+        }
+        
+        /* Show the desktop video and hide the mobile video for wider screens */
+        @media screen and (min-width: 768px) {
+            .desktop-video {
+                display: block;
+            }
+            .mobile-video {
+                display: none;
+            }
+			.desktop-video-2 {
+                display: block;
+            }
+            .mobile-video-2 {
+                display: none;
+        }
+    </style>
 	<style id='global-styles-inline-css' type='text/css'>
 		:root {
 			--wp--preset--aspect-ratio--square: 1;
@@ -568,18 +593,20 @@
 											data-minheight="14"
 											aria-label="ZZ ARCHITECTS | Among India&#039;s Leading Luxury Architectural &amp; Interior Design Firms..">
 											<div class="logo-image main-logo  logo-light" data-maxheight="20"
-												style="height: 100px;"><img decoding="async" src="static/asra-logo.png"
-													alt="logo" width="280" height="37" class="img-responsive" /></div>
+												style="height: 100px;"><img decoding="async"
+													src="static/asra-logo-black.png" alt="logo" width="280" height="37"
+													class="img-responsive" /></div>
 											<div class="logo-image main-logo  logo-dark" data-maxheight="20"
 												style="height: 100px;display:none;"><img decoding="async"
-													src="static/asra-logo.png" alt="logo" width="280" height="37"
+													src="static/asra-logo-black.png" alt="logo" width="280" height="37"
 													class="img-responsive" /></div>
 											<div class="logo-image mobile-logo logo-light" data-maxheight="20"
-												style="height: 100px;"><img decoding="async" src="static/asra-logo.png"
-													alt="logo" width="280" height="37" class="img-responsive" /></div>
+												style="height: 100px;"><img decoding="async"
+													src="static/asra-logo-black.png" alt="logo" width="280" height="37"
+													class="img-responsive" /></div>
 											<div class="logo-image mobile-logo logo-dark" data-maxheight="20"
 												style="height: 100px;display:none;"><img decoding="async"
-													src="static/asra-logo.png" alt="logo" width="280" height="37"
+													src="static/asra-logo-black.png" alt="logo" width="280" height="37"
 													class="img-responsive" /></div>
 										</a>
 									</div>
@@ -1133,7 +1160,22 @@
 																											data-adaptivefont="1"
 																											data-desktopportraitfontsize="100"
 																											data-plugin="rendered">
-																											<video
+																											<video class="desktop-video"
+																												style="width: 100%; height: 100%;"
+																												class="n2-ow"
+																												controlsList="nodownload"
+																												data-volume="0"
+																												muted="muted"
+																												playsinline="playsinline"
+																												webkit-playsinline="webkit-playsinline"
+																												id="n2-ss-2item1"
+																												controls="controls"
+																												preload="auto">
+																												<source
+																													src="static/videos/landscape_video_1.mp4"
+																													type="video/mp4">
+																											</video>
+																											<video class="mobile-video"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1197,7 +1239,23 @@
 																											data-adaptivefont="1"
 																											data-desktopportraitfontsize="100"
 																											data-plugin="rendered">
-																											<video
+																											<video class="desktop-video-2"
+																												style="width: 100%; height: 100%;"
+																												class="n2-ow"
+																												controlsList="nodownload"
+																												data-volume="0"
+																												muted="muted"
+																												playsinline="playsinline"
+																												webkit-playsinline="webkit-playsinline"
+																												id="n2-ss-2item2"
+																												controls="controls"
+																												poster="static/videos/landscape_video_2.mp4"
+																												preload="auto">
+																												<source
+																													src="static/videos/landscape_video_2.mp4"
+																													type="video/mp4">
+																											</video>
+																											<video class="mobile-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
