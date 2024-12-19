@@ -75,6 +75,39 @@
         }
     </style>
     <style id='global-styles-inline-css' type='text/css'>
+
+.altair-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fills the container, cropping minimally */
+  object-position: center; /* Centers the image */
+}
+
+@media (max-width: 1200px) {
+  .altair-img {
+    height: 80vh; /* Adjusts height for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .altair-img {
+    height: 70vh; /* Adjusts height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .altair-img {
+    height: 60vh; /* Adjusts height for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .altair-img {
+    height: 50vh; /* Adjusts height for phones */
+  }
+}
+
+
         :root {
             --wp--preset--aspect-ratio--square: 1;
             --wp--preset--aspect-ratio--4-3: 4/3;
@@ -615,9 +648,10 @@
                                                                 class="fa fa-angle-right fa-dropdown"></i></a>
                                                     </li>
                                                     <li
-                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132487 menu-item-link">
-                                                    <a title="IN PROGRESS" href="../on-going/projects.html">IN PROGRESS<i
-                                                            class="fa fa-angle-right fa-dropdown"></i></a>
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132487 menu-item-link">
+                                                        <a title="ON GOING PROJECTS" href="../on-going/projects.html">ON
+                                                            GOING PROJECTS<i
+                                                                class="fa fa-angle-right fa-dropdown"></i></a>
                                                     </li>
                                                     <li
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132487 menu-item-link">
@@ -641,8 +675,7 @@
                                                     <li
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133499 menu-item-link">
 
-                                                        <a title="CAREERS"
-                                                            href="../careers/index.html">CAREERS<i
+                                                        <a title="CAREERS" href="../careers/index.html">CAREERS<i
                                                                 class="fa fa-angle-right fa-dropdown"></i></a>
                                                     </li>
                                                     <li
@@ -696,7 +729,13 @@
                                                                         <div class="heading-text el-text">
                                                                             <h1
                                                                                 class="font-175345 h1 fontspace-111509 font-weight-400">
-                                                                                <span><span class="font-175345">With unwavering dedication, we are actively shaping transformative creations, continually building toward progress and redefining excellence every step of the way.
+                                                                                <span><span class="font-175345">With
+                                                                                        unwavering dedication, we are
+                                                                                        actively shaping transformative
+                                                                                        creations, continually building
+                                                                                        toward progress and redefining
+                                                                                        excellence every step of the
+                                                                                        way.
 
                                                                             </h1>
                                                                         </div>
@@ -745,7 +784,8 @@
                                                                                                         data-filter="*"
                                                                                                         class="active isotope-nav-link grid-nav-link">
                                                                                                         Explore our
-                                                                                                        projects IN PROGRESS.</a>
+                                                                                                        projects IN
+                                                                                                        PROGRESS.</a>
                                                                                                 </span>
                                                                                             </li>
                                                                                             <!-- <li
@@ -866,7 +906,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/1.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -942,7 +982,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/2.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1018,7 +1058,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/3.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1094,7 +1134,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/4.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1170,7 +1210,8 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/5.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1246,7 +1287,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/6.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1322,7 +1363,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/7.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1398,7 +1439,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/8.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1474,7 +1515,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/9.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1550,7 +1591,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/10.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1626,7 +1667,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/11.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1702,7 +1743,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/12.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1778,7 +1819,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/13.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1854,7 +1895,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/14.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -1930,7 +1971,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/15.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -2006,7 +2047,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/16.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -2082,7 +2123,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/17.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -2158,7 +2199,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/18.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -2234,7 +2275,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/19.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -2310,7 +2351,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/20.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
@@ -2386,7 +2427,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <img decoding="async"
-                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011"
+                                                                                                                    class="srcset-async srcset-auto srcset-on-layout wp-image-132011 altair-img"
                                                                                                                     src="https://raw.githubusercontent.com/binsaad-tech/asra-website/refs/heads/master/static/construction-in-progress/21.jpg"
                                                                                                                     width="1862"
                                                                                                                     height="1396"
