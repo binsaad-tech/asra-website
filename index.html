@@ -69,41 +69,62 @@
 		}
 	</style>
 	<style>
-        /* Hide the desktop video by default */
-        .desktop-video {
-            display: none;
-        }
+		/* Hide the desktop video by default */
+		.desktop-video {
+			display: none;
+		}
 
 		.desktop-video-2 {
-            display: none;
-        }
+			display: none;
+		}
+
 		video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+			width: 100vh;
+			/* object-fit: cover; */
+		}
+		img {
+			width: 100%;
+			max-width: 600px;
+		}
+
+		@media (max-width: 768px) {
+			.logoimg {
+				img {
+					width: 420%;
+					/* Increase the size for smaller screens */
+					max-width: none;
+					/* Remove the max-width for mobile */
+				}
+			}
+		}
 
 
 
 
 
 
-        
-        /* Show the desktop video and hide the mobile video for wider screens */
-        @media screen and (min-width: 768px) {
-            .desktop-video {
-                display: block;
-            }
-            .mobile-video {
-                display: none;
-            }
+		/* Show the desktop video and hide the mobile video for wider screens */
+		@media screen and (min-width: 768px) {
+			.desktop-video {
+				display: block;
+			}
+
+			.mobile-video {
+				display: none;
+			}
+
+
 			.desktop-video-2 {
-                display: block;
-            }
-            .mobile-video-2 {
-                display: none;
-        }
-    </style>
+				display: block;
+			}
+
+			.mobile-video-2 {
+				display: none;
+			}
+
+
+		}
+	</style>
 	<style id='global-styles-inline-css' type='text/css'>
 		:root {
 			--wp--preset--aspect-ratio--square: 1;
@@ -599,7 +620,7 @@
 						<div class="row-menu row-offcanvas">
 							<div class="row-menu-inner row-brand menu-horizontal-inner">
 								<div id="logo-container-mobile" class="col-lg-0 logo-container middle">
-									<div id="main-logo" class="navbar-header style-light">
+									<div id="main-logo" class="navbar-header logoimg style-light">
 										<a href="index.html" class="navbar-brand" data-padding-shrink="27"
 											data-minheight="14"
 											aria-label="ZZ ARCHITECTS | Among India&#039;s Leading Luxury Architectural &amp; Interior Design Firms..">
@@ -659,7 +680,8 @@
 													</li>
 													<li
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132487 menu-item-link">
-														<a title="ON GOING PROJECTS" href="on-going/projects.html">ON GOING PROJECTS<i
+														<a title="ON GOING PROJECTS" href="on-going/projects.html">ON
+															GOING PROJECTS<i
 																class="fa fa-angle-right fa-dropdown"></i></a>
 													</li>
 													<li
@@ -1181,7 +1203,9 @@
 																											data-adaptivefont="1"
 																											data-desktopportraitfontsize="100"
 																											data-plugin="rendered">
-																											<video autoplay class="desktop-video"
+																											<video
+																												autoplay
+																												class="desktop-video"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1196,7 +1220,9 @@
 																													src="static/videos/HOME_VIDEO_1.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video autoplay class="mobile-video"
+																											<video
+																												autoplay
+																												class="mobile-video"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1208,7 +1234,7 @@
 																												controls="controls"
 																												preload="auto">
 																												<source
-																													src="static/videos/INCLINED_VILLA.mp4"
+																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_1.mp4"
 																													type="video/mp4">
 																											</video>
 																										</div>
@@ -1260,7 +1286,9 @@
 																											data-adaptivefont="1"
 																											data-desktopportraitfontsize="100"
 																											data-plugin="rendered">
-																											<video autoplay class="desktop-video-2"
+																											<video
+																												autoplay
+																												class="desktop-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1276,7 +1304,9 @@
 																													src="static/videos/HOME_VIDEO_2.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video autoplay class="mobile-video-2"
+																											<video
+																												autoplay
+																												class="mobile-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1286,10 +1316,10 @@
 																												webkit-playsinline="webkit-playsinline"
 																												id="n2-ss-2item2"
 																												controls="controls"
-																												poster="static/videos/RUSTIC_HOME.mp4"
+																												poster="static/videos/INCLINED_VILLA.mp4"
 																												preload="auto">
 																												<source
-																													src="static/videos/RUSTIC_HOME.mp4"
+																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_2.mp4"
 																													type="video/mp4">
 																											</video>
 																										</div>
@@ -1298,7 +1328,7 @@
 																								<div data-slide-duration="0"
 																									data-id="109"
 																									style=""
-																									class="n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-125">
+																									class="n2-ss-slide n2-ss-canvas n2-ow hidemobile n2-ss-slide-125">
 																									<div class="n2-ss-slide-background n2-ow"
 																										data-mode="stretch">
 																									</div>
@@ -1341,7 +1371,9 @@
 																											data-adaptivefont="1"
 																											data-desktopportraitfontsize="100"
 																											data-plugin="rendered">
-																											<video autoplay class="desktop-video-2"
+																											<video
+																												autoplay
+																												class="desktop-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1357,7 +1389,9 @@
 																													src="static/videos/HOME_VIDEO_3.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video autoplay class="mobile-video-2"
+																											<video
+																												autoplay
+																												class="mobile-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1367,10 +1401,10 @@
 																												webkit-playsinline="webkit-playsinline"
 																												id="n2-ss-2item2"
 																												controls="controls"
-																												poster="static/videos/RUSTIC_HOME.mp4"
+																												poster="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_3.mp4"
 																												preload="auto">
 																												<source
-																													src="static/videos/RUSTIC_HOME.mp4"
+																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_3.mp4"
 																													type="video/mp4">
 																											</video>
 																										</div>
@@ -1378,8 +1412,7 @@
 																								</div>
 																								<div data-slide-duration="0"
 																									data-id="110"
-																									style=""
-																									class="n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-125">
+																									class="n2-ss-slide n2-ss-canvas n2-ow hidemobile n2-ss-slide-125">
 																									<div class="n2-ss-slide-background n2-ow"
 																										data-mode="stretch">
 																									</div>
@@ -1422,7 +1455,9 @@
 																											data-adaptivefont="1"
 																											data-desktopportraitfontsize="100"
 																											data-plugin="rendered">
-																											<video autoplay class="desktop-video-4"
+																											<video
+																												autoplay
+																												class="desktop-video-4"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1438,7 +1473,9 @@
 																													src="static/videos/HOME_VIDEO_4.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video autoplay class="mobile-video-2"
+																											<video
+																												autoplay
+																												class="mobile-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1448,10 +1485,10 @@
 																												webkit-playsinline="webkit-playsinline"
 																												id="n2-ss-2item2"
 																												controls="controls"
-																												poster="static/videos/RUSTIC_HOME.mp4"
+																												poster="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_4.mp4"
 																												preload="auto">
 																												<source
-																													src="static/videos/RUSTIC_HOME.mp4"
+																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_4.mp4"
 																													type="video/mp4">
 																											</video>
 																										</div>
@@ -1460,7 +1497,7 @@
 																								<div data-slide-duration="0"
 																									data-id="109"
 																									style=""
-																									class="n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-125">
+																									class="n2-ss-slide n2-ss-canvas n2-ow hidemobile n2-ss-slide-125">
 																									<div class="n2-ss-slide-background n2-ow"
 																										data-mode="stretch">
 																									</div>
@@ -1503,7 +1540,9 @@
 																											data-adaptivefont="1"
 																											data-desktopportraitfontsize="100"
 																											data-plugin="rendered">
-																											<video autoplay class="desktop-video-2"
+																											<video
+																												autoplay
+																												class="desktop-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1519,7 +1558,9 @@
 																													src="static/videos/HOME_VIDEO_5.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video autoplay class="mobile-video-2"
+																											<video
+																												autoplay
+																												class="mobile-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1529,10 +1570,10 @@
 																												webkit-playsinline="webkit-playsinline"
 																												id="n2-ss-2item2"
 																												controls="controls"
-																												poster="static/videos/RUSTIC_HOME.mp4"
+																												poster="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_5.mp4"
 																												preload="auto">
 																												<source
-																													src="static/videos/RUSTIC_HOME.mp4"
+																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_5.mp4"
 																													type="video/mp4">
 																											</video>
 																										</div>
@@ -1541,7 +1582,7 @@
 																								<div data-slide-duration="0"
 																									data-id="109"
 																									style=""
-																									class="n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-125">
+																									class="n2-ss-slide n2-ss-canvas n2-ow hidemobile n2-ss-slide-125">
 																									<div class="n2-ss-slide-background n2-ow"
 																										data-mode="stretch">
 																									</div>
@@ -1584,7 +1625,9 @@
 																											data-adaptivefont="1"
 																											data-desktopportraitfontsize="100"
 																											data-plugin="rendered">
-																											<video autoplay class="desktop-video-2"
+																											<video
+																												autoplay
+																												class="desktop-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1600,7 +1643,9 @@
 																													src="static/videos/HOME_VIDEO_6.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video autoplay class="mobile-video-2"
+																											<video
+																												autoplay
+																												class="mobile-video-2"
 																												style="width: 100%; height: 100%;"
 																												class="n2-ow"
 																												controlsList="nodownload"
@@ -1610,10 +1655,10 @@
 																												webkit-playsinline="webkit-playsinline"
 																												id="n2-ss-2item2"
 																												controls="controls"
-																												poster="static/videos/RUSTIC_HOME.mp4"
+																												poster="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_6.mp4"
 																												preload="auto">
 																												<source
-																													src="static/videos/RUSTIC_HOME.mp4"
+																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_6.mp4"
 																													type="video/mp4">
 																											</video>
 																										</div>

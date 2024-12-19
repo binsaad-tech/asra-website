@@ -90,6 +90,48 @@
 		}
 	</style>
 	<style>
+		#myDiv {
+			display: block !important;
+			/* Ensure the div is always displayed */
+			visibility: visible !important;
+			/* Ensure the div is not hidden */
+		}
+
+		#myDiv .uncell .uncont {
+			width: auto;
+			/* Default width for larger screens */
+		}
+
+		/* For smaller screens (e.g., max-width: 768px for tablets and mobile) */
+		@media (max-width: 768px) {
+			#myDiv .uncell .uncont {
+				width: 100% !important;
+				/* Make the text container take full width on small screens */
+				text-align: center;
+				/* Optional: Center the text if desired */
+			}
+		}
+
+
+		#myDiv .mobile-hidden,
+		#myDiv .tablet-hidden {
+			display: block !important;
+			/* Force the divs to be visible */
+			visibility: visible !important;
+			/* Ensure visibility */
+		}
+
+		/* Adjust if there's an issue with scrolling or overflow */
+		body,
+		html {
+			overflow-x: visible !important;
+			/* Ensure the page is scrollable */
+			overflow-y: visible !important;
+			/* Allow vertical scrolling */
+		}
+
+
+
 		.image-container {
 			display: flex;
 			justify-content: space-around;
@@ -635,7 +677,8 @@
 													</li>
 													<li
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132487 menu-item-link">
-														<a title="ON GOING PROJECTS" href="../on-going/projects.html">ON GOING PROJECTS<i
+														<a title="ON GOING PROJECTS" href="../on-going/projects.html">ON
+															GOING PROJECTS<i
 																class="fa fa-angle-right fa-dropdown"></i></a>
 													</li>
 													<li
@@ -774,8 +817,10 @@
 																					alt="First Image" width="300">
 																				<p
 																					style="font-family: 'Jost', serif; font-size: 18px; font-weight: 400; color: #f0f0f0;">
-																					ER. K . Sharafath Ali,<br>B.E Civil <br>
-																					Chairman and managing director of Asragroup
+																					ER. K . Sharafath Ali,<br>B.E Civil
+																					<br>
+																					Chairman and managing director of
+																					Asragroup
 
 																				</p>
 																			</div>
@@ -786,7 +831,8 @@
 																					alt="Second Image" width="300">
 																				<p
 																					style="font-family: 'Jost', serif; font-size: 18px; font-weight: 400; color: #f0f0f0;">
-																					AR. K. Mohammed Shazaan,<br>B.Arch <br>
+																					AR. K. Mohammed Shazaan,<br>B.Arch
+																					<br>
 																					Principal Architect at Asragroup
 																				</p>
 																			</div>
@@ -807,72 +853,86 @@
 						</div>
 					</div>
 				</div>
-				<div data-parent="true" class="vc_row style-color-590268-bg row-container" id="row-unique-2">
-					<div class="row unequal col-no-gutter quad-top-padding quad-bottom-padding quad-h-padding full-width row-parent"
-						data-height-ratio="45">
-						<div class="wpb_row row-inner">
-							<div
-								class="wpb_column pos-middle pos-center align_center column_parent col-lg-12 tablet-hidden mobile-hidden single-internal-gutter">
-								<div class="uncol style-light">
-									<div class="uncoltable">
-										<div class="uncell">
-											<div class="uncont no-block-padding col-custom-width"
-												style="max-width:45%;">
-												<div class="vc_custom_heading_wrap ">
-													<div class="heading-text el-text">
-														<h1
-															class="font-136269 h1 fontspace-111509 font-weight-400 text-uppercase">
-															<span><span class="font-136269">Meet
-																	our team</span></span>
-														</h1>
+				<div id="myDiv">
+					<div data-parent="true" class="vc_row style-color-590268-bg row-container" id="row-unique-2">
+						<div class="row unequal col-no-gutter quad-top-padding quad-bottom-padding quad-h-padding full-width row-parent"
+							data-height-ratio="45">
+							<div class="wpb_row row-inner">
+								<div
+									class="wpb_column pos-middle pos-center align_center column_parent col-lg-12 tablet-hidden mobile-hidden single-internal-gutter">
+									<div class="uncol style-light">
+										<div class="uncoltable">
+											<div class="uncell">
+												<div class="uncont no-block-padding col-custom-width"
+													style="max-width:45%;">
+													<div class="vc_custom_heading_wrap ">
+														<div class="heading-text el-text">
+															<h1
+																class="font-136269 h1 fontspace-111509 font-weight-400 text-uppercase">
+																<span><span class="font-136269">Meet
+																		our team</span></span>
+															</h1>
+														</div>
+														<div class="clear"></div>
 													</div>
-													<div class="clear"></div>
-												</div>
-												<div class="uncode_text_column text-lead text-color-prif-color">
-													<p style="text-align: justify; font-size: 22px; font-weight: 300;">
-														<span class="font-356328"><strong>Mr. K. SHARAFATH ALI
-															</strong>, Founder of ASRA CONSTRUCTION, he has
-															been successfully and passionately created solutions in the
-															field of constructional excellence with the experience of 27
-															years and constantly endeavour to provide utmost
-															satisfaction to our clients
-															and has been a pivotal contributor to the construction
-															industry, leveraging his expertise as a civil engineer to
-															drive numerous successful projects.
+													<div class="uncode_text_column text-lead text-color-prif-color">
+														<p
+															style="text-align: justify; font-size: 22px; font-weight: 300;">
+															<span class="font-356328"><strong>Mr. K. SHARAFATH ALI
+																</strong>, Founder of ASRA CONSTRUCTION, he has
+																been successfully and passionately created solutions in
+																the
+																field of constructional excellence with the experience
+																of 27
+																years and constantly endeavour to provide utmost
+																satisfaction to our clients
+																and has been a pivotal contributor to the construction
+																industry, leveraging his expertise as a civil engineer
+																to
+																drive numerous successful projects.
 
-															Mr. Ali’s dedication, technical knowledge, and leadership
-															have significantly contributed to the reputation and success
-															of the construction firm. His commitment to excellence
-															continues to inspire and set benchmarks in the industry.
-														</span>
-													</p>
-												</div>
-												<div class="uncode_text_column text-lead text-color-prif-color">
-													<p style="text-align: justify; font-size: 22px; font-weight: 300;">
-														<span class="font-356328">As a visionary architect,
-															<strong>Mohammed
-																Shazaan </strong>has consistently delivered innovative
-															solutions that
-															blend functionality, sustainability, and aesthetic
-															excellence. By spearheading complex projects,he has not only
-															enhanced the firm's portfolio but also driven client
-															satisfaction through meticulous attention to detail and
-															creative problem-solving. Shazaan approach emphasizes
-															collaboration, ensuring seamless integration of client goals
-															with cutting-edge design principles. From conceptualizing
-															bold architectural visions to overseeing their execution and
-															has contributed to redefining urban landscapes and
-															establishing the firm as a leader in modern, sustainable
-															architecture.</span>
-													</p>
+																Mr. Ali’s dedication, technical knowledge, and
+																leadership
+																have significantly contributed to the reputation and
+																success
+																of the construction firm. His commitment to excellence
+																continues to inspire and set benchmarks in the industry.
+															</span>
+														</p>
+													</div>
+													<div class="uncode_text_column text-lead text-color-prif-color">
+														<p
+															style="text-align: justify; font-size: 22px; font-weight: 300;">
+															<span class="font-356328">As a visionary architect,
+																<strong>Mohammed
+																	Shazaan </strong>has consistently delivered
+																innovative
+																solutions that
+																blend functionality, sustainability, and aesthetic
+																excellence. By spearheading complex projects,he has not
+																only
+																enhanced the firm's portfolio but also driven client
+																satisfaction through meticulous attention to detail and
+																creative problem-solving. Shazaan approach emphasizes
+																collaboration, ensuring seamless integration of client
+																goals
+																with cutting-edge design principles. From
+																conceptualizing
+																bold architectural visions to overseeing their execution
+																and
+																has contributed to redefining urban landscapes and
+																establishing the firm as a leader in modern, sustainable
+																architecture.</span>
+														</p>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<!-- <script id="script-row-unique-2" data-row="script-row-unique-2" type="text/javascript"
+								<!-- <script id="script-row-unique-2" data-row="script-row-unique-2" type="text/javascript"
 								class="vc_controls">UNCODE.initRow(document.getElementById("row-unique-2"));</script> -->
+							</div>
 						</div>
 					</div>
 				</div>
