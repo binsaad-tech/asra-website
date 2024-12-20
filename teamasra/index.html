@@ -130,6 +130,37 @@
 			/* Allow vertical scrolling */
 		}
 
+		/* Default styling for the image container */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Styling for individual image-text containers */
+.image-container > div {
+    text-align: center; /* Center align text below the image */
+}
+
+/* Apply vertical stacking for smaller screens */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the stacked items */
+    }
+
+    .image-container > div {
+        margin-bottom: 20px; /* Add spacing between stacked items */
+    }
+
+    .image-container img {
+        width: 80%; /* Adjust image size for smaller screens */
+        max-width: 300px; /* Ensure a maximum width */
+    }
+}
+
+
 
 
 		.image-container {
@@ -634,8 +665,8 @@
 												style="height: 100px;"><img decoding="async"
 													src="../static/asra-logo-black.png" alt="logo" width="280"
 													height="37" class="img-responsive" /></div>
-											<div class="logo-image mobile-logo logo-dark" data-maxheight="20"
-												style="height: 100px;display:none;"><img decoding="async"
+											<div class="logo-image mobile-logo logo-dark" data-maxheight="200"
+												style="height: 100px  !important;"><img decoding="async"
 													src="../static/asra-logo-black.png" alt="logo" width="280"
 													height="37" class="img-responsive" /></div>
 										</a>
