@@ -132,6 +132,15 @@
   object-position: center; /* Centers the image */
 }
 
+.textdiv {
+    word-wrap: break-word; /* Break long words to fit within the frame */
+    overflow-wrap: break-word; /* Modern equivalent, supported widely */
+    white-space: normal; /* Allow text to wrap onto the next line */
+    max-width: 100%; /* Prevent the div from exceeding the screen width */
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+
 @media (max-width: 1200px) {
   .altair-img {
     height: 80vh; /* Adjusts height for medium screens */
@@ -601,10 +610,10 @@
 												style="height: 20px;display:none;"><img decoding="async"
 													src="../static/asra-logo.png" alt="logo" width="280" height="37"
 													class="img-responsive" /></div>
-											<div class="logo-image mobile-logo logo-light" data-maxheight="20"
-												style="height: 100px;"><img decoding="async"
-													src="../static/asra-logo-black.png" alt="logo" width="280"
-													height="37" class="img-responsive" /></div>
+											<div class="logo-image mobile-logo logo-light" data-maxheight="50"
+												style="height: 50px !important;width: 150px !important;"><img decoding="async"
+													src="../static/asra-logo-black.png" alt="logo" width="150"
+													height="50" class="img-responsive" /></div>
 											<div class="logo-image mobile-logo logo-dark" data-maxheight="20"
 												style="height: 20px;display:none;"><img decoding="async"
 													src="../static/asra-logo.png" alt="logo" width="280" height="37"
@@ -778,18 +787,16 @@
 																						<ul
 																							class="menu-smart sm text-uppercase menu-smart--filter-cats ">
 																							<li class="filter-show-all">
+																								<div class="textdiv">
 																								<span>
 																									<a href="#"
 																										data-filter="*"
 																										class="active isotope-nav-link grid-nav-link">
 																										Explore our
 																										exquisite
-																										catalogue of
-																										remarkable
-																										projects,
-																										crafted to
-																										inspire.</a>
+																										catalogue.</a>
 																								</span>
+																							</div>
 																							</li>
 																							<!-- <li
 																								class="filter-cat-145 filter-cat">
