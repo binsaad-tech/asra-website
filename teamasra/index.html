@@ -94,9 +94,24 @@
 			display: block !important;
 			/* Ensure the div is always displayed */
 			visibility: visible !important;
-			
+
 			/* Ensure the div is not hidden */
 		}
+
+		@media (max-width: 768px) {
+
+			/* Adjust as per your mobile breakpoint */
+			.uncont {
+				max-width: 80% !important;
+				/* Adjusting the max-width to 80% for mobile */
+			}
+
+			.altairtext p {
+				text-align: left !important;
+				/* Ensuring text alignment is left instead of justify */
+			}
+		}
+
 
 		#myDiv .uncell .uncont {
 			width: auto;
@@ -134,34 +149,40 @@
 		}
 
 		/* Default styling for the image container */
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
+		.image-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			gap: 20px;
+		}
 
-/* Styling for individual image-text containers */
-.image-container > div {
-    text-align: center; /* Center align text below the image */
-}
+		/* Styling for individual image-text containers */
+		.image-container>div {
+			text-align: center;
+			/* Center align text below the image */
+		}
 
-/* Apply vertical stacking for smaller screens */
-@media (max-width: 768px) {
-    .image-container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align the stacked items */
-    }
+		/* Apply vertical stacking for smaller screens */
+		@media (max-width: 768px) {
+			.image-container {
+				flex-direction: column;
+				/* Stack items vertically */
+				align-items: center;
+				/* Center align the stacked items */
+			}
 
-    .image-container > div {
-        margin-bottom: 20px; /* Add spacing between stacked items */
-    }
+			.image-container>div {
+				margin-bottom: 20px;
+				/* Add spacing between stacked items */
+			}
 
-    .image-container img {
-        width: 80%; /* Adjust image size for smaller screens */
-        max-width: 300px; /* Ensure a maximum width */
-    }
-}
+			.image-container img {
+				width: 80%;
+				/* Adjust image size for smaller screens */
+				max-width: 300px;
+				/* Ensure a maximum width */
+			}
+		}
 
 
 
@@ -665,9 +686,9 @@
 													src="../static/asra-logo-black.png" alt="logo" width="280"
 													height="37" class="img-responsive" /></div>
 											<div class="logo-image mobile-logo logo-light" data-maxheight="50"
-												style="height: 50px !important;width: 150px !important;"><img decoding="async"
-													src="../static/asra-logo-black.png" alt="logo" width="150"
-													height="50" class="img-responsive" /></div>
+												style="height: 50px !important;width: 150px !important;"><img
+													decoding="async" src="../static/asra-logo-black.png" alt="logo"
+													width="150" height="50" class="img-responsive" /></div>
 											<div class="logo-image mobile-logo logo-dark" data-maxheight="200"
 												style="height: 100px  !important;"><img decoding="async"
 													src="../static/asra-logo-black.png" alt="logo" width="280"
@@ -894,7 +915,7 @@
 							<div class="wpb_row row-inner">
 								<div
 									class="wpb_column pos-middle pos-center align_left column_parent col-lg-20 tablet-hidden mobile-hidden single-internal-gutter">
-									<div class="uncol style-light">
+									<div class="altairtext uncol style-light">
 										<div class="uncoltable">
 											<div class="uncell">
 												<div class="uncont no-block-padding col-custom-width"
@@ -909,9 +930,9 @@
 														</div>
 														<div class="clear"></div>
 													</div>
-													<div class="uncode_text_column text-lead text-color-prif-color">
-														<p
-															style="text-align: left; font-size: 20px; font-weight: 300;">
+													<div
+														class="altairtext uncode_text_column text-lead text-color-prif-color">
+														<p style="text-align: left; font-size: 20px; font-weight: 300;">
 															<span class="font-356328"><strong>Mr. K. SHARAFATH ALI
 																</strong>, Founder of ASRA CONSTRUCTION, he has
 																been successfully and passionately created solutions in
@@ -935,8 +956,7 @@
 														</p>
 													</div>
 													<div class="uncode_text_column text-lead text-color-prif-color">
-														<p
-															style="text-align: left; font-size: 20px; font-weight: 300;">
+														<p style="text-align: left; font-size: 20px; font-weight: 300;">
 															<span class="font-356328">As a visionary architect,
 																<strong>Mohammed
 																	Shazaan </strong>has consistently delivered
