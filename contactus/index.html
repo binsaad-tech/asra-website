@@ -75,6 +75,25 @@
 		}
 	</style>
 	<style id='global-styles-inline-css' type='text/css'>
+		@media (max-width: 768px) {
+
+			.altairimg {
+
+				width: 100%;
+				height: 100px;
+				max-height: none;
+				/* Scale the image to be larger */
+				max-width: none;
+				/* Prevent restrictions by parent */
+				position: relative;
+				/* Optional: Ensure proper positioning */
+			}
+		}
+
+
+
+
+
 		:root {
 			--wp--preset--aspect-ratio--square: 1;
 			--wp--preset--aspect-ratio--4-3: 4/3;
@@ -559,9 +578,9 @@
 													src="../static/asra-logo.png" alt="logo" width="280" height="37"
 													class="img-responsive" /></div>
 											<div class="logo-image mobile-logo logo-light" data-maxheight="50"
-												style="height: 50px !important;width: 150px !important;"><img decoding="async"
-													src="../static/asra-logo-black.png" alt="logo" width="150"
-													height="50" class="img-responsive" /></div>
+												style="height: 50px !important;width: 150px !important;"><img
+													decoding="async" src="../static/asra-logo-black.png" alt="logo"
+													width="150" height="50" class="img-responsive" /></div>
 											<div class="logo-image mobile-logo logo-dark" data-maxheight="20"
 												style="height: 20px;display:none;"><img decoding="async"
 													src="../static/asra-logo.png" alt="logo" width="280" height="37"
@@ -605,7 +624,8 @@
 													</li>
 													<li
 														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132487 menu-item-link">
-														<a title="ON GOING PROJECTS" href="../on-going/projects.html">ON GOING PROJECTS<i
+														<a title="ON GOING PROJECTS" href="../on-going/projects.html">ON
+															GOING PROJECTS<i
 																class="fa fa-angle-right fa-dropdown"></i></a>
 													</li>
 													<li
@@ -716,10 +736,9 @@
 												id="row-unique-1">
 												<div class="row-background background-element">
 													<div class="background-wrapper">
-														<div class="background-inner srcset-bg srcset-bg-async"
+														<div class="background-inner srcset-bg srcset-bg-async altairimg"
 															style="background-repeat: no-repeat;background-position: center center;background-attachment: scroll;background-size: cover;"
-															data-background-image="../static/asra-map.png"
-															data-mobile-background-image="../static/asra-map.png">
+															data-background-image="../static/asra-map.png">
 														</div>
 
 													</div>
@@ -797,10 +816,19 @@
 																													<span
 																														class="font-356328">Asra
 																														Constructions<br />
-																														#476 First Floor<br />
-																														BTM LAYOUT
-																														2nd Stage,<br />
-																														29th Main, 9th Cross, BANGALORE 560001</span>
+																														#476
+																														First
+																														Floor<br />
+																														BTM
+																														LAYOUT
+																														2nd
+																														Stage,<br />
+																														29th
+																														Main,
+																														9th
+																														Cross,
+																														BANGALORE
+																														560001</span>
 																												</p>
 																												<p
 																													style="text-align: left; font-size: 22px; color: blue;">
