@@ -79,6 +79,8 @@
 		}
 
 
+
+
 		img {
 			width: 100%;
 			max-width: 600px;
@@ -95,6 +97,14 @@
 			}
 
 			.mobile-video {
+				display: block;
+			}
+
+			.desktop-only {
+				display: none;
+			}
+
+			.mobile-only {
 				display: block;
 			}
 		}
@@ -120,6 +130,14 @@
 			}
 
 			.mobile-video-2 {
+				display: none;
+			}
+
+			.desktop-only {
+				display: block;
+			}
+
+			.mobile-only {
 				display: none;
 			}
 
@@ -538,6 +556,67 @@
 		href="wp-content/plugins/nextend-smart-slider3-pro/library/media/smartslider.mine889.css?1540219414"
 		media="all" />
 	<script type="text/javascript" src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script>
+
+		const videoConfigs = [
+			{ containerId: 'video-section-1', videoId: 'video1', src: 'static/videos/HOME_VIDEO_1.mp4' },
+			{ containerId: 'video-section-2', videoId: 'video2', src: 'static/videos/HOME_VIDEO_2.mp4' },
+			{ containerId: 'video-section-3', videoId: 'video3', src: 'static/videos/HOME_VIDEO_3.mp4' },
+			{ containerId: 'video-section-4', videoId: 'video4', src: 'static/videos/HOME_VIDEO_4.mp4' },
+			{ containerId: 'video-section-5', videoId: 'video5', src: 'static/videos/HOME_VIDEO_5.mp4' },
+			{ containerId: 'video-section-6', videoId: 'video6', src: 'static/videos/HOME_VIDEO_6.mp4' },
+
+		];
+
+		// Function to create videos
+		function createVideosInSections() {
+			if (window.innerWidth >= 768) {
+				videoConfigs.forEach(({ containerId, videoId, src }) => {
+					const container = document.getElementById(containerId);
+					if (container) {
+						// Clear any existing content in the container
+						container.innerHTML = '';
+
+						// Create the video element
+						const video = document.createElement('video');
+						video.setAttribute('autoplay', true);
+						video.setAttribute('class', 'desktop-video n2-ow');
+						video.setAttribute('style', 'width: 100%; height: 100%;');
+						video.setAttribute('controlsList', 'nodownload');
+						video.setAttribute('data-volume', '0');
+						video.setAttribute('muted', 'muted');
+						video.setAttribute('playsinline', 'playsinline');
+						video.setAttribute('webkit-playsinline', 'webkit-playsinline');
+						video.setAttribute('id', videoId);
+						video.setAttribute('controls', 'controls');
+						video.setAttribute('preload', 'auto');
+
+						// Create the source element
+						const source = document.createElement('source');
+						source.setAttribute('src', src);
+						source.setAttribute('type', 'video/mp4');
+
+						// Append the source to the video element
+						video.appendChild(source);
+
+						// Append the video to the container
+						container.appendChild(video);
+					} else {
+						console.error(`No container found with ID "${containerId}".`);
+					}
+				});
+			}
+		}
+
+		// Call the function on page load
+		createVideosInSections();
+
+		// Optional: Add a listener for dynamic changes on window resize
+		window.addEventListener('resize', createVideosInSections);
+
+
+
+	</script>
 	<script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
 		id="jquery-migrate-js"></script>
 	<script type="text/javascript" id="uncode-init-js-extra">
@@ -634,13 +713,15 @@
 													src="static/asra-logo-black.png" alt="logo" width="280" height="37"
 													class="img-responsive" /></div>
 											<div class="logo-image mobile-logo logo-light" data-maxheight="50"
-												style="height: 50px !important;width: 150px !important; margin-top: -18px !important; margin-left: -18px !important;"><img
-													decoding="async" src="../static/asra-logo-black.png" alt="logo"
-													width="150" height="50" class="img-responsive" /></div>
+												style="height: 50px !important;width: 150px !important; margin-top: -18px !important; margin-left: -18px !important;">
+												<img decoding="async" src="../static/asra-logo-black.png" alt="logo"
+													width="150" height="50" class="img-responsive" />
+											</div>
 											<div class="logo-image mobile-logo logo-dark" data-maxheight="20"
-												style="height: 50px !important;width: 150px !important; margin-top: -18px !important; margin-left: -18px !important;"><img decoding="async"
-													src="static/asra-logo-black.png" alt="logo" width="280" height="37"
-													class="img-responsive" /></div>
+												style="height: 50px !important;width: 150px !important; margin-top: -18px !important; margin-left: -18px !important;">
+												<img decoding="async" src="static/asra-logo-black.png" alt="logo"
+													width="280" height="37" class="img-responsive" />
+											</div>
 										</a>
 									</div>
 								</div>
@@ -1221,27 +1302,16 @@
 																													src="static/videos/HOME_VIDEO_1.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video
-																												autoplay
+																											<img src="static/images/MOBILE_HOME_IMAGES/W3.jpg"
 																												class="mobile-video"
-																												style="width: 100%; height: 100%;"
+																												style="width: 100%; height: 100%; "
 																												class="n2-ow"
-																												controlsList="nodownload"
-																												data-volume="0"
-																												muted="muted"
-																												playsinline="playsinline"
-																												webkit-playsinline="webkit-playsinline"
-																												id="n2-ss-2item1"
-																												controls="controls"
 																												preload="auto">
-																												<source
-																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_1.mp4"
-																													type="video/mp4">
-																											</video>
+																											</img>
 																										</div>
 																									</div>
 																								</div>
-																								<div data-slide-duration="0"
+																								<div data-slide-duration=" 0"
 																									data-id="108"
 																									style=""
 																									class="n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-125">
@@ -1305,24 +1375,12 @@
 																													src="static/videos/HOME_VIDEO_2.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video
-																												autoplay
-																												class="mobile-video-2"
-																												style="width: 100%; height: 100%;"
+																											<img src="static/images/MOBILE_HOME_IMAGES/W4.jpg"
+																												class="mobile-video"
+																												style="width: 100%; height: 100%; "
 																												class="n2-ow"
-																												controlsList="nodownload"
-																												data-volume="0"
-																												muted="muted"
-																												playsinline="playsinline"
-																												webkit-playsinline="webkit-playsinline"
-																												id="n2-ss-2item2"
-																												controls="controls"
-																												poster="static/videos/INCLINED_VILLA.mp4"
 																												preload="auto">
-																												<source
-																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_2.mp4"
-																													type="video/mp4">
-																											</video>
+																											</img>
 																										</div>
 																									</div>
 																								</div>
@@ -1390,24 +1448,12 @@
 																													src="static/videos/HOME_VIDEO_3.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video
-																												autoplay
-																												class="mobile-video-2"
-																												style="width: 100%; height: 100%;"
+																											<img src="static/images/MOBILE_HOME_IMAGES/W5.jpg"
+																												class="mobile-video"
+																												style="width: 100%; height: 100%; "
 																												class="n2-ow"
-																												controlsList="nodownload"
-																												data-volume="0"
-																												muted="muted"
-																												playsinline="playsinline"
-																												webkit-playsinline="webkit-playsinline"
-																												id="n2-ss-2item2"
-																												controls="controls"
-																												poster="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_3.mp4"
 																												preload="auto">
-																												<source
-																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_3.mp4"
-																													type="video/mp4">
-																											</video>
+																											</img>
 																										</div>
 																									</div>
 																								</div>
@@ -1474,24 +1520,12 @@
 																													src="static/videos/HOME_VIDEO_4.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video
-																												autoplay
+																											<img src="static/images/MOBILE_HOME_IMAGES/W6.jpg"
 																												class="mobile-video"
-																												style="width: 100%; height: 100%;"
+																												style="width: 100%; height: 100%; "
 																												class="n2-ow"
-																												controlsList="nodownload"
-																												data-volume="0"
-																												muted="muted"
-																												playsinline="playsinline"
-																												webkit-playsinline="webkit-playsinline"
-																												id="n2-ss-2item2"
-																												controls="controls"
-																												poster="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_4.mp4"
 																												preload="auto">
-																												<source
-																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_4.mp4"
-																													type="video/mp4">
-																											</video>
+																											</img>
 																										</div>
 																									</div>
 																								</div>
@@ -1559,24 +1593,12 @@
 																													src="static/videos/HOME_VIDEO_5.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video
-																												autoplay
-																												class="mobile-video-2"
-																												style="width: 100%; height: 100%;"
+																											<img src="static/images/MOBILE_HOME_IMAGES/W7.jpg"
+																												class="mobile-video"
+																												style="width: 100%; height: 100%; "
 																												class="n2-ow"
-																												controlsList="nodownload"
-																												data-volume="0"
-																												muted="muted"
-																												playsinline="playsinline"
-																												webkit-playsinline="webkit-playsinline"
-																												id="n2-ss-2item2"
-																												controls="controls"
-																												poster="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_5.mp4"
 																												preload="auto">
-																												<source
-																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_5.mp4"
-																													type="video/mp4">
-																											</video>
+																											</img>
 																										</div>
 																									</div>
 																								</div>
@@ -1644,24 +1666,12 @@
 																													src="static/videos/HOME_VIDEO_6.mp4"
 																													type="video/mp4">
 																											</video>
-																											<video
-																												autoplay
-																												class="mobile-video-2"
-																												style="width: 100%; height: 100%;"
+																											<img src="static/images/MOBILE_HOME_IMAGES/W8.jpg"
+																												class="mobile-video"
+																												style="width: 100%; height: 100%; object-fit: cover;"
 																												class="n2-ow"
-																												controlsList="nodownload"
-																												data-volume="0"
-																												muted="muted"
-																												playsinline="playsinline"
-																												webkit-playsinline="webkit-playsinline"
-																												id="n2-ss-2item2"
-																												controls="controls"
-																												poster="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_6.mp4"
 																												preload="auto">
-																												<source
-																													src="static/videos/PORTRAIT_VIDEOS/PORTRAIT_VIDEO_6.mp4"
-																													type="video/mp4">
-																											</video>
+																											</img>
 																										</div>
 																									</div>
 																								</div>
